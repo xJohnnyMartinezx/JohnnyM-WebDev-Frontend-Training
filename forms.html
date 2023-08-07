@@ -21,18 +21,30 @@
       <section>
         <h5>How did you hear about us?</h5>
         <label for="billboard">
-          Billboard <input id="billboard" type="checkbox" name="billboard" value="billboard">
+          Billboard <input id="billboard" type="radio" name="billboard" value="billboard">
         </label>
-        <label for="billboard">
-          Radio Advertisement <input id="radio advertisement" type="checkbox" name="radio advertisement" value="radio advertisement">
+        <label for="radioAdvertisement">
+          Radio Advertisement <input id="radioAdvertisement" type="radio" name="radioAdvertisement" value="radio advertisement">
         </label>
-        <label for="billboard">
-          Internet Advertisement <input id="internet advertisement" type="checkbox" name="internet advertisement" value="internet advertisement">
+        <label for="internetAdvertisement">
+          Internet Advertisement <input id="internetAdvertisement" type="radio" name="internetAdvertisement" value="internet advertisement">
         </label>
         <label for="other">
-          Other <input id="other" type="checkbox" name="other" value="other">
+          Other <input id="other" type="radio" name="other" value="other">
         </label>
       </section>
+
+      <section>
+        <h5>What browser are you using?</h5>
+        <select name="browser_preference">
+          <option value="chrome">Chrome</option>
+          <option value="safari">Safari</option>
+          <option value="edge">Edge</option>
+          <option value="netscape">Netscape</option>
+          <option value="other">Other</option>
+        </select>
+      </section>
+      <br>
 
       <button type="submit">Submit</button>
 
