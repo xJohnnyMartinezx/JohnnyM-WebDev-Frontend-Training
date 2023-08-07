@@ -1,5 +1,58 @@
 
 .fancy-header {
-    color: purple; /* single line comment */
+    color: purple;
     text-decoration: underline;
+    /* CENTERING THE MAIN HEADING */
+    text-align: center;
+}
+.intro {
+    text-align: center;
+}
+
+body {
+    background-color: cadetblue;
+    background-image: url("../img/tedsf.jpeg");
+    font-family: "Droid Sans Mono", sans-serif;
+}
+
+ol.myOL {
+    list-style: upper-alpha;
+    display: inline-block;
+    text-align: left;
+
+}
+ul.myUL {
+    list-style: square;
+    display: inline-block;
+    text-align: left;
+
+}
+
+table, th, td {
+    border: 1px solid;
+    text-align: center;
+    width: 30%;
+}
+
+a:link {
+    color: blue;
+}a:visited {
+    color: purple;
+}a:hover {
+    color: green;
+}a:active {
+    color: black;
+}
+
+ .company-lists {
+     text-align: center;
+ }
+
+ .pricing-table {
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+.company-photos {
+    text-align: center;
 }
