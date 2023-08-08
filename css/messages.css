@@ -6,6 +6,7 @@ body, html {
     font-family: Arial, Ubuntu, sans-serif;
 }
 
+/* ----- MESSAGES EXERCISE ------ */
 .message {
     margin: 1em;
     padding: .5em;
@@ -13,23 +14,59 @@ body, html {
     border-radius: 5px;
 }
 
+/*.message-info {*/
+/*    background-color: rgb(199 217 253);*/
+/*    border-color: lightgrey;*/
+/*    color: rgb(107 107 178);*/
+/*}*/
+/*.message-success {*/
+/*    background-color: rgb(202 241 214);*/
+/*    border-color: lightgrey;*/
+/*    color: rgb(51 120 77);*/
+/*}*/
+/*.message-warning {*/
+/*    background-color: rgb(251 251  198 );*/
+/*    border-color: lightgrey;*/
+/*    color: rgb(146 130 61);*/
+/*}*/
+/*.message-error {*/
+/*    background-color: rgb(248 205 210);*/
+/*    border-color: lightgrey;*/
+/*    color: rgb(136 49 69);*/
+/*}*/
+
+/* ----- BONUS -----*/
+:root{
+    --bg-info-color: rgb(199 217 253);
+    --text-info-color: rgb(107 107 178);
+
+    --bg-success-color: rgb(202 241 214);
+    --text-success-color: rgb(51 120 77);
+
+    --bg-warning-color: rgb(251 251  198);
+    --text-warning-color: rgb(146 130 61);
+
+    --bg-error-color: rgb(248 205 210);
+    --text-error-color: rgb(136 49 69);
+}
+
 .message-info {
-    background-color: rgb(199 217 253);
+    background-color: var(--bg-info-color);
     border-color: lightgrey;
-    color: rgb(107 107 178);
+    color: var(--text-info-color);
 }
 .message-success {
-    background-color: rgb(202 241 214);
+    background-color: var(--bg-success-color);
     border-color: lightgrey;
-    color: rgb(51 120 77);
+    color: var(--text-success-color);
 }
 .message-warning {
-    background-color: rgb(251 251  198 );
+    background-color: var(--bg-warning-color);
     border-color: lightgrey;
-    color: rgb(146 130 61);
+    color: var(--text-warning-color);
 }
 .message-error {
-    background-color: rgb(248 205 210);
+    background-color: var(--bg-error-color);
     border-color: lightgrey;
-    color: rgb(136 49 69);
+    color: var(--text-error-color);
 }
