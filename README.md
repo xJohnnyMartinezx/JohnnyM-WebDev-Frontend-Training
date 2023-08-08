@@ -1,1 +1,1 @@
-# JohnnyM-WebDev-Frontend-Training
+# JohnnyM-WebDev-Frontend-Upskilling
