@@ -107,6 +107,9 @@ section:nth-of-type(3) h3 {
     width: 5em;
     background: brown;
     /* enter needed declarations here */
+    /*background-color: #848487;*/
+    /*justify-content: space-between;*/
+    flex-grow: 1;
 }
 
 .large-brown-box:nth-of-type(2) {
@@ -115,6 +118,8 @@ section:nth-of-type(3) h3 {
 
 section:nth-of-type(5) {
     /* enter needed declarations here */
+    /*background-color: #848487;*/
+    justify-content: space-evenly;
 }
 
 .yellow-box {
@@ -127,6 +132,10 @@ section:nth-of-type(6) {
     background: coral;
     height: 14em;
     /* enter needed declarations here */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    /*align-content: space-around;*/
 }
 
 .grey-box {
