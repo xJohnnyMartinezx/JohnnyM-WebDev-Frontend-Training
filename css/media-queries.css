@@ -1,0 +1,258 @@
+/*body{*/
+/*    display: flex;*/
+/*}*/
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (max-width:1600px) {
+    .alert-info{
+        display: none;
+    }
+
+    /*     COMPANY H1  */
+    .companyName{
+        /*display: flex;*/
+        display: inline-block;
+        /*justify-content: left;*/
+        float: left;
+        width: 25%;
+        margin-left: 0;
+
+    }
+
+    /*    NAV LINKS */
+    .nav-links{
+        list-style-type: none;
+        /*display: inline-block;*/
+        float: right;
+        display: flex;
+        flex-direction: row;
+
+
+
+    }
+
+    /* LISt ITEMS*/
+    li{
+        margin:  .5em .5em .5em .5em;
+        padding: .5em;
+        align-content: space-between;
+        text-align: center;
+    }
+
+    /* IMG HEADER AND IMG */
+    .header-img{
+        display: flex;
+        justify-content: center;
+        clear: both;
+        margin: auto;
+        padding: 5em;
+    }
+
+    img{
+        height: 600px;
+        width: 1200px;
+    }
+
+    /* PARAGRAPH POSITIONING */
+    #main{
+        float: left;
+        width: 40%;
+    }
+
+    .sub-section{
+        float: right;
+        width: 40%;
+
+    }
+
+    footer{
+        clear: both;
+        margin: auto;
+        padding: 5em;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #social-links{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+
+    }
+
+    /* Add a hover effect if you want */
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    /* Set a specific color for each brand */
+
+    /* Facebook */
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+
+    /* Twitter */
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+
+    /* YouTube */
+    .fa-youtube {
+        background: #e80000;
+        color: white;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (max-width:992px) {
+    .alert-info{
+        display: none;
+    }
+    img{
+        height: 400px;
+        width: 900px;
+    }
+}
+
+
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (max-width:768px) {
+    .alert-info{
+        display: flex;
+        border-style: solid;
+        border-color: #848487;
+        background-color: #D6FEFE;
+        justify-content: center;
+        height: 2em;
+        align-items: center;
+    }
+
+    /*     COMPANY H1  */
+    .companyName{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        float: none;
+    }
+
+    /*    NAV LINKS */
+    .nav-links{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        float: none;
+    }
+
+    /* LISt ITEMS*/
+    li{
+        background-color: #CCCCCC;
+        margin:  .5em .5em .5em .5em;
+        padding: .5em;
+        width: 90%;
+        align-content: space-between;
+        text-align: center;
+    }
+
+    .header-img{
+        display: flex;
+        justify-content: center;
+    }
+
+    img{
+        height: 350px;
+        width: 500px;
+    }
+
+    /* PARAGRAPH POSITIONING */
+    #main{
+        float: none;
+        width: 100%;
+    }
+
+    .sub-section{
+        float: none;
+        width: 100%;
+
+    }
+}
+
+/* Small devices (phones and pocket devices, 576 and up) */
+@media screen and (max-width:500px) {
+
+    /* SKIP TO MAIN CONTENT LINK */
+    .alert-info{
+        display: flex;
+        border-style: solid;
+        border-color: #848487;
+        background-color: #D6FEFE;
+        justify-content: center;
+        height: 2em;
+        align-items: center;
+    }
+
+    /*     COMPANY H1  */
+    .companyName{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        float: none;
+    }
+
+    /*    NAV LINKS */
+    .nav-links{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        float: none;
+
+    }
+
+    li{
+        background-color: #CCCCCC;
+        margin:  .5em .5em .5em .5em;
+        padding: .5em;
+        width: 90%;
+        align-content: space-between;
+        text-align: center;
+    }
+
+    .header-img{
+        display: flex;
+        justify-content: center;
+    }
+
+    img{
+        height: 224px;
+        width: 339px;
+    }
+
+    footer{
+        clear: both;
+        margin: auto;
+        padding: 2em;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #social-links{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
