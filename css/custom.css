@@ -3,7 +3,15 @@
     height: 346px;
     background-size: cover;
 }
-
 .jumbotron-banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 23em;
+}
 
+.bg-light{
+  width: 100%;
+  text-align: center;
+  opacity: 0.7;
 }
