@@ -1,0 +1,9 @@
+.jumbotron{
+  background-image: url("/img/pizza-jumbotron.png");
+    height: 346px;
+    background-size: cover;
+}
+
+.jumbotron-banner{
+
+}
