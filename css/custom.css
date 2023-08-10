@@ -1,8 +1,4 @@
-.jumbotron{
-  background-image: url("/img/pizza-jumbotron.png");
-    height: 346px;
-    background-size: cover;
-}
+
 .jumbotron-banner{
   display: flex;
   justify-content: center;
@@ -14,4 +10,24 @@
   width: 100%;
   text-align: center;
   opacity: 0.7;
+}
+
+
+.jumbotron {
+  background-image: url("/img/pizza-jumbotron.png");
+  background-size: cover;
+  height: 346px;
+}
+
+.display-4 {
+  background-color: #ffffff;
+  opacity: 60%;
+  width: 100%;
+}
+.card {
+  width: auto;
+}
+
+.card-header {
+  width: auto;
 }
