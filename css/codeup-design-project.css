@@ -2,11 +2,39 @@ body {
     background: #f0f0f0;
     margin: 0;
 }
-/******* Custom Fonts *******/
+/******* CUSTOM FONTS *******/
 .anton {
     font-family: 'Anton', sans-serif;
 }
 .abel {
     font-family: 'Abel', sans-serif;
 }
+
+/******* CIRCLE ELEMENTS  **********/
+.circle {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    border: white solid 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    margin: 10px;
+}
+.design {
+    background-color: #E6563b;
+}
+.develop {
+    background-color: #eb9d39;
+}
+.support {
+    background-color: #7bb16c;
+}
+.host {
+    background-color: #22abaa;
+}
+
+
 
