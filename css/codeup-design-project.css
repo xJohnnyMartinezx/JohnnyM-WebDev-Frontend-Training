@@ -1,0 +1,12 @@
+body {
+    background: #f0f0f0;
+    margin: 0;
+}
+/******* Custom Fonts *******/
+.anton {
+    font-family: 'Anton', sans-serif;
+}
+.abel {
+    font-family: 'Abel', sans-serif;
+}
+
