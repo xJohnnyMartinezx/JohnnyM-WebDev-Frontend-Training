@@ -37,4 +37,29 @@ body {
 }
 
 
+/********* CONTENT ELEMENTS *********/
+.headline {
+    margin-bottom: 35px;
+}
+.card {
+    display: inline-block;
+    margin: 0.2rem;
+}
+.card-image {
+    border-color: #E6E6E6;
+    height: 15rem;
+}
+.icon {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Anton', sans-serif;
+    color: black;
+    margin: 0 .25em;
+    font-size: .75em;
+}
+
 
