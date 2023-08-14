@@ -189,6 +189,7 @@ console.log(!!"false");
 !!"0"
 // TRUE
 console.log(!!"0");
+console.log("***********************************************")
 
 // ************************************************
 // ********************* 2. ***********************
@@ -197,11 +198,28 @@ console.log(!!"0");
 // Execute the following statement in the Chrome JavaScript console and then follow the directions below.
 //
 //
-//     var sample = "Hello Codeup";
+    var sample = "Hello Codeup";
+
 //     Use .length to find the number of characters in the string.
+        let numOfChar = sample.length;
+        console.log(numOfChar);
 //     Try to make the sample string all upper or all lower case.
+        let low = sample.toLowerCase();
+        let high = sample.toUpperCase();
+        console.log(low);
+        console.log(high);
 //     Update the variable sample via concatenation so that it contains "Hello Codeup Students".
+        let addStudents = sample + " Students";
+        console.log(addStudents);
 //     Replace "Students" with "Class".
+        let changeUp = sample.replace("Codeup", "Students");
+        console.log(changeUp);
 //     Find the index of "c" using .indexOf(). What do you observe?
+        let cIndex = sample.indexOf("c");
+        console.log(cIndex); // PRINTS -1 BECAUSE LOWERCASE c DOES NOT EXIST IN sample STRING
 //     Find the index of "C" using .indexOf().
+        let indexC = sample.indexOf("C");
+        console.log(indexC);
 //     Retrieve a substring that contains only the word "Codeup" by using indexOf() and substring().
+        let retrieveCodeup = sample.substring(6, 12);
+        console.log(retrieveCodeup);
