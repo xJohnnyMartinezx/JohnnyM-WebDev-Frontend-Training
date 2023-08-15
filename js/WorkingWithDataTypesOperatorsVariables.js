@@ -1,5 +1,6 @@
 // Exercises
 // ********* 1. *************
+console.log("********* 1. *************")
 // For each of the following code blocks, read the code and predict what the result of evaluating it would be, then execute the statement(s) in the Chrome console.
 //
 //
@@ -189,7 +190,7 @@ console.log(!!"false");
 !!"0"
 // TRUE
 console.log(!!"0");
-console.log("***********************************************")
+console.log("********* 2. *************");
 
 // ************************************************
 // ********************* 2. ***********************
@@ -223,3 +224,117 @@ console.log("***********************************************")
 //     Retrieve a substring that contains only the word "Codeup" by using indexOf() and substring().
         let retrieveCodeup = sample.substring(6, 12);
         console.log(retrieveCodeup);
+
+console.log("********************************************************");
+// ************************************************
+// ********************* 3. ***********************
+// ************************************************
+console.log("********* 3. *************");
+
+
+// Write some JavaScript code, that is, variables and operators, to describe the following scenarios.
+// Do not worry about the real operations to get the values, the goal of these exercises is to understand how real world conditions can be represented with code.
+
+//   A) You have rented some movies for your kids: The little mermaid (for 3 days), Brother Bear (for 5 days, they love it), and Hercules (1 day, you don't know yet if they're going to like it).
+//   If price for a movie per day is $3, how much will you have to pay?
+let mermaid = 3;
+let bear = 5;
+let hercules = 1;
+
+let total = 3 * (mermaid + bear + hercules);
+console.log(total);
+console.log("********************");
+
+//   B) Suppose you're working as a contractor for 3 companies: Google, Amazon and Facebook, they pay you a different rate per hour. Google pays $400, Amazon $380, and Facebook $350.
+//   How much will you receive in payment for this week? You worked 10 hours for Facebook, 6 hours for Google and 4 hours for Amazon.
+let googlePay = 400;
+let amazonPay = 380;
+let fbPay = 350;
+
+let googleHrs = 6;
+let amazonHrs = 4;
+let fbHrs = 10;
+
+let totalPay = (googlePay * googleHrs) + (amazonPay * amazonHrs) + (fbPay * fbHrs);
+console.log(totalPay);
+console.log("********************");
+
+//   C) A student can be enrolled in a class only if the class is not full and the class schedule does not conflict with her current schedule.
+// let fullClass = true;
+let fullClass = false;
+// let classConflict = true;
+let classConflict = false;
+if (fullClass !== true && classConflict === false){
+    console.log("You can enroll in this class")
+} else {
+    console.log("No")
+}
+console.log("********************");
+
+//   D) A product offer can be applied only if a person buys more than 2 items, and the offer has not expired. Premium members do not need to buy a specific amount of products.
+// let premiumMember = true;
+let premiumMember = false;
+// let items = 1;
+// let items = 2;
+let items = 3;
+let productOffer = items > 2;
+// let productOfferExp = true;
+let productOfferExp = false;
+if (productOffer && productOfferExp !== true){
+    console.log("You qualify for this offer because you purchased more than 3 items.");
+} else if (premiumMember) {
+    console.log("You qualify for this offer because you're a premium member.");
+} else if (productOfferExp) {
+    console.log("This offer is expired")
+} else {
+    console.log("You do not qualify for this offer");
+}
+console.log("********************************************************");
+// ************************************************
+// ********************* 4. ***********************
+// ************************************************
+console.log("********* 4. *************");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
