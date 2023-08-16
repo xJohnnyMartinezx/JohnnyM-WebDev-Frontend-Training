@@ -144,7 +144,7 @@ function calculateTotal(luckyNum, totalAmnt) {
 // console.log(calculateTotal(randomNum, total));
 // console.log(calculateTotal(randomNum, 50));
 // console.log(calculateTotal(randomNum, 25));
-console.log(randomNum);
+// console.log(randomNum);
 
 
 /**
@@ -158,9 +158,9 @@ console.log(randomNum);
 // Generate a random number between 0 and 6
 // var luckyNumber = Math.floor(Math.random() * 6);
 
-let userInputTotal = prompt("Please enter your bill total: ")
+// let userInputTotal = prompt("Please enter your bill total: ")
 
-calculateTotal(randomNum, userInputTotal);
+// calculateTotal(randomNum, userInputTotal);
 /**
  * TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
@@ -179,3 +179,55 @@ calculateTotal(randomNum, userInputTotal);
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+
+
+// ***** FUNCTION TO CHECK IF CONFIRMATION IS TRUE OR FALSE;
+function userYesOrNo() {
+    // BECAUSE THIS IS A confirmation IT WILL RETURN A BOOLEAN.
+    return confirm("Would you like to enter a number?");
+}
+
+// ***** CHECK IF USER INPUT IS A NUMBER;
+function checkNum(userInput) {
+    return !isNaN(userInput);
+}
+
+// ****** CHECK IF USER INPUT IS ODD OR EVEN;
+function oddOrEven(userInput) {
+    if (userInput % 2 === 0) {
+        alert("The number you entered is even.");
+    } else {
+        alert("The number you entered is odd.");
+    }
+}
+
+// ****** ADD 100 TO USER INPUT;
+function addOneHundred(userInput) {
+    let sum = parseInt(userInput) + 100;
+    return alert("Your number plus 100 is: " + sum);
+}
+
+// ****** CHECK IF USER INPUT IS POSITIVE IR NEGATIVE;
+function negOrPos(userInput) {
+    if (userInput < 0) {
+        alert("The number you entered is Negative.");
+    } else {
+        alert("The number you entered is Positive.");
+    }
+}
+
+// ****** RUNNING IT ALL BY CALLING ALL FUNCTIONS;
+function userInteraction() {
+    if (userYesOrNo()) {
+        let userPrompt = prompt("Ok cool, please enter a number.");
+        if (checkNum(userPrompt)) {
+            oddOrEven(userPrompt)
+            addOneHundred(userPrompt)
+            negOrPos(userPrompt);
+        }
+    } else {
+        alert("OK, bye Felicia!");
+    }
+}
+
+userInteraction(); //CALLING THE MAIN FUNCTION;
