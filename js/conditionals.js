@@ -116,16 +116,27 @@ function analyzeColor(color) {
 
 function calculateTotal(luckyNum, totalAmnt) {
     if (luckyNum === 1) {
+        let newPrice = totalAmnt - (totalAmnt * .10);
+        alert("Your lucky number is: 1. Your total before this discount is: $" + totalAmnt + ", and you new total after discount is: $" + newPrice);
         return "Your total with a 10% discount is: $" + (totalAmnt - (totalAmnt * .10));
     } else if (luckyNum === 2) {
+        let newPrice = totalAmnt - (totalAmnt * .25);
+        alert("Your lucky number is: 2. Your total before this discount is: $" + totalAmnt + ", and you new total after discount is: $" + newPrice);
         return "Your total with a 25% discount is: $" + (totalAmnt - (totalAmnt * .25));
     } else if (luckyNum === 3) {
+        let newPrice = totalAmnt - (totalAmnt * .35);
+        alert("Your lucky number is: 3. Your total before this discount is: $" + totalAmnt + ", and you new total after discount is: $" + newPrice);
         return "Your total with a 35% discount is: $" + (totalAmnt - (totalAmnt * .35));
     } else if (luckyNum === 4) {
+        let newPrice = totalAmnt - (totalAmnt * .50);
+        alert("Your lucky number is: 4. Your total before this discount is: $" + totalAmnt + ", and you new total after discount is: $" + newPrice);
         return "Your total with a 50% discount is: $" + (totalAmnt - (totalAmnt * .50));
     } else if (luckyNum === 5) {
+        let newPrice = totalAmnt - totalAmnt;
+        alert("Your lucky number is: 5. Your total before this discount is: $" + totalAmnt + ", and you new total after discount is: $" + newPrice);
         return "You get everything free... Total is: $" + (totalAmnt - totalAmnt);
     } else {
+        alert("Your lucky number is: 0, so you don't qualify for a discount. Your total price is: $" + totalAmnt);
         return "Sorry you get no discount, your total is: $" + (totalAmnt);
     }
 }
@@ -147,7 +158,9 @@ console.log(randomNum);
 // Generate a random number between 0 and 6
 // var luckyNumber = Math.floor(Math.random() * 6);
 
-prompt()
+let userInputTotal = prompt("Please enter your bill total: ")
+
+calculateTotal(randomNum, userInputTotal);
 /**
  * TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
