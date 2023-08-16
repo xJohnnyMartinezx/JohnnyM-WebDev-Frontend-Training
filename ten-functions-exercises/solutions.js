@@ -71,10 +71,28 @@ function isEqual(input1, input2) {
     return input1 == input2;
 }
 
+// ******** EXERCISE 8 ********
+// Define a function named or that takes in two input arguments. The output returned should be the result of an or operation on both inputs.
+function or(input1, input2) {
+    return input1 || input2;
+}
 
+// ******** EXERCISE 9 ********
+// Define a function named and that takes in two input arguments and returns the result of a logical and operation of both inputs.
+function and(input1, input2){
+    return input1 && input2;
+}
 
-
-
+// ******** EXERCISE 10 ********
+// Define a function named concat that takes in two input arguments. If both arguments are strings, then return the concatenated result.
+// If two numbers are provided, then return the string concatenation of each set of numerals.
+function concat(input1, input2) {
+    if (typeof input1 === typeof(String()) && typeof input2 === typeof(String())) {
+        return input1 + input2;
+    } else if (!isNaN(input1) && !isNaN(input2)) {
+        return input1.toString() + input2.toString();
+    }
+}
 
 
 
