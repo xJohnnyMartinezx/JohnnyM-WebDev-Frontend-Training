@@ -23,18 +23,29 @@
 
 // ******** EXERCISE 1 *********
 // Define a function named isTrue that takes in any input and returns true if the input provided is exactly equal to true in value and data type.
-function isTrue(input){
+function isTrue(input) {
     return input === true;
 }
 
 // ******** EXERCISE 2 *********
 // Define a function named isFalse that takes in a value and returns a true if and only if the provided input is equal to false in both type and value.
-function isFalse(input){
+function isFalse(input) {
     return input === false;
 }
 
 // ******** EXERCISE 3 *********
 // Define a function named not that takes in any input and returns the boolean opposite of the provided input.
-function not(input){
+function not(input) {
     return !input;
+}
+
+// ******** EXERCISE 4 ********
+// Define a function named addOne that takes in a single input. If the input is a number or a numeric string, return the value plus one.
+function addOne(input) {
+    let num = parseInt(input);
+    if (input === Infinity) {
+        return input;
+    } else if (!isNaN(input)){
+        return num + 1;
+    }
 }
