@@ -111,6 +111,31 @@ function analyzeColor(color) {
  * return value.
  */
 
+ let total = 100;
+ let randomNum = Math.floor(Math.random() * 6);
+
+function calculateTotal(luckyNum, totalAmnt) {
+    if (luckyNum === 1) {
+        return "Your total with a 10% discount is: $" + (totalAmnt - (totalAmnt * .10));
+    } else if (luckyNum === 2) {
+        return "Your total with a 25% discount is: $" + (totalAmnt - (totalAmnt * .25));
+    } else if (luckyNum === 3) {
+        return "Your total with a 35% discount is: $" + (totalAmnt - (totalAmnt * .35));
+    } else if (luckyNum === 4) {
+        return "Your total with a 50% discount is: $" + (totalAmnt - (totalAmnt * .50));
+    } else if (luckyNum === 5) {
+        return "You get everything free... Total is: $" + (totalAmnt - totalAmnt);
+    } else {
+        return "Sorry you get no discount, your total is: $" + (totalAmnt);
+    }
+}
+
+// console.log(calculateTotal(randomNum, total));
+// console.log(calculateTotal(randomNum, 50));
+// console.log(calculateTotal(randomNum, 25));
+console.log(randomNum);
+
+
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.
@@ -122,6 +147,7 @@ function analyzeColor(color) {
 // Generate a random number between 0 and 6
 // var luckyNumber = Math.floor(Math.random() * 6);
 
+prompt()
 /**
  * TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
