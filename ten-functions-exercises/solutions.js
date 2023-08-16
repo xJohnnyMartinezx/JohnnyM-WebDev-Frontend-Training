@@ -49,3 +49,11 @@ function addOne(input) {
         return num + 1;
     }
 }
+
+// ******** EXERCISE 5 ********
+// Define a function named isEven that takes in a single input. If the input is an even number or a string containing an even number, return true.
+// Any other input should return false for the output.
+function isEven(input) {
+    let num = parseInt(input);
+    return num % 2 === 0;
+}
