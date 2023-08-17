@@ -95,6 +95,7 @@
 // }
 
 
+// ********* REDID ALL PROBLEMS THE NEXT DAY FOR MORE PRACTICE **************
 
 //  1)
 function isTrue(input) {
