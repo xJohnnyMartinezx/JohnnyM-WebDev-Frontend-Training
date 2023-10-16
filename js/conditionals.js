@@ -60,19 +60,19 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
 function analyzeColor(color) {
     switch (color) {
         case "red":
-            console.log("Red is a hot color.");
+            // console.log("Red is a hot color.");
             alert("Red is a hot color.");
             break;
         case "green":
-            console.log("Green is a really cool color!");
+            // console.log("Green is a really cool color!");
             alert("Green is a really cool color!");
             break;
         case "yellow":
-            console.log("Yellow is the color of the Sun.");
+            // console.log("Yellow is the color of the Sun.");
             alert("Yellow is the color of the Sun.");
             break;
         default:
-            console.log("I don't know anything about that color");
+            // console.log("I don't know anything about that color");
             alert("I don't know anything about that color");
             break;
     }
@@ -117,27 +117,27 @@ function analyzeColor(color) {
 function calculateTotal(luckyNum, totalAmnt) {
     if (luckyNum === 1) {
         let newPrice = totalAmnt - (totalAmnt * .10);
-        alert("Your lucky number is: 1. Your total before this discount is: $" + totalAmnt + ", and you new total after discount is: $" + newPrice);
-        return "Your total with a 10% discount is: $" + (totalAmnt - (totalAmnt * .10));
+        alert(`Your lucky number is: 1. Your total before this discount is: $${totalAmnt}, and you new total after discount is: $${newPrice}`);
+        return `Your total with a 10% discount is: $${totalAmnt - (totalAmnt * .10)}`;
     } else if (luckyNum === 2) {
         let newPrice = totalAmnt - (totalAmnt * .25);
-        alert("Your lucky number is: 2. Your total before this discount is: $" + totalAmnt + ", and you new total after discount is: $" + newPrice);
-        return "Your total with a 25% discount is: $" + (totalAmnt - (totalAmnt * .25));
+        alert(`Your lucky number is: 2. Your total before this discount is: $${totalAmnt}, and you new total after discount is: $${newPrice}`);
+        return `Your total with a 10% discount is: $${totalAmnt - (totalAmnt * .25)}`;
     } else if (luckyNum === 3) {
         let newPrice = totalAmnt - (totalAmnt * .35);
-        alert("Your lucky number is: 3. Your total before this discount is: $" + totalAmnt + ", and you new total after discount is: $" + newPrice);
-        return "Your total with a 35% discount is: $" + (totalAmnt - (totalAmnt * .35));
+        alert(`Your lucky number is: 3. Your total before this discount is: $${totalAmnt}, and you new total after discount is: $${newPrice}`);
+        return `Your total with a 10% discount is: $${totalAmnt - (totalAmnt * .35)}`;
     } else if (luckyNum === 4) {
         let newPrice = totalAmnt - (totalAmnt * .50);
-        alert("Your lucky number is: 4. Your total before this discount is: $" + totalAmnt + ", and you new total after discount is: $" + newPrice);
-        return "Your total with a 50% discount is: $" + (totalAmnt - (totalAmnt * .50));
+        alert(`Your lucky number is: 4. Your total before this discount is: $${totalAmnt}, and you new total after discount is: $${newPrice}`);
+        return `Your total with a 10% discount is: $${totalAmnt - (totalAmnt * .50)}`;
     } else if (luckyNum === 5) {
         let newPrice = totalAmnt - totalAmnt;
-        alert("Your lucky number is: 5. Your total before this discount is: $" + totalAmnt + ", and you new total after discount is: $" + newPrice);
-        return "You get everything free... Total is: $" + (totalAmnt - totalAmnt);
+        alert(`Your lucky number is: 5. Your total before this discount is: $${totalAmnt}, and you new total after discount is: $${newPrice}`);
+        return `You get everything free... Total is: $${(totalAmnt - totalAmnt)};`
     } else {
-        alert("Your lucky number is: 0, so you don't qualify for a discount. Your total price is: $" + totalAmnt);
-        return "Sorry you get no discount, your total is: $" + (totalAmnt);
+        alert(`Your lucky number is: 0, so you don't qualify for a discount. Your total price is: $${totalAmnt}`);
+        return `Sorry you get no discount, your total is: $${totalAmnt};`
     }
 }
 
@@ -189,7 +189,11 @@ function userYesOrNo() {
 
 // ***** CHECK IF USER INPUT IS A NUMBER;
 function checkNum(userInput) {
-    return !isNaN(userInput);
+    if (isNaN(userInput)) {
+        return alert("You did not enter a number.");
+    } else {
+        return !isNaN(userInput);
+    }
 }
 
 // ****** CHECK IF USER INPUT IS ODD OR EVEN;
@@ -224,6 +228,8 @@ function userInteraction() {
             oddOrEven(userPrompt)
             addOneHundred(userPrompt)
             negOrPos(userPrompt);
+        } else {
+            userInteraction();
         }
     } else {
         alert("OK, bye Felicia!");

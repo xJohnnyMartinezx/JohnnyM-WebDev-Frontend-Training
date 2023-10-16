@@ -32,7 +32,7 @@ console.log(e++);
 // **************************************************************
 
 var perplexed; // perplexed is undefined (no value is assigned)
-perplexed + 2;
+
 // NaN BECAUSE perplexed CANNOT BE ADDED TO 2.
 console.log(perplexed + 2);
 
@@ -111,13 +111,13 @@ console.log(isNaN("false"));
 // **************************************************************
 
 isNaN(false);
-// FALSE
+// FALSE BECAUSE THIS A FALSY VALUE
 console.log(isNaN(false));
 // **************************************************************
 
 // // to illustrate why the isNaN() function is needed:
 NaN == NaN
-//
+// FALSE BECAUSE NaN IS A FALSY VALUE
 console.log(NaN == NaN);
 // **************************************************************
 
@@ -143,12 +143,12 @@ console.log(!!false);
 // **************************************************************
 
 !!0
-// FALSE
+// FALSE BECAUSE THIS A FALSY VALUE
 console.log(!!0);
 // **************************************************************
 
 !!-0
-// FALSE
+// FALSE BECAUSE THIS A FALSY VALUE
 console.log(!!-0);
 // **************************************************************
 
@@ -178,7 +178,7 @@ console.log(!!"");
 // **************************************************************
 
 !!''
-// FALSE
+// FALSE BECAUSE THIS A FALSY VALUE
 console.log(!!'');
 // **************************************************************
 
@@ -323,48 +323,3 @@ console.log(passWhiteSpace);
 
 let usernameWhiteSpace = username === username.trim();
 console.log(usernameWhiteSpace);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
