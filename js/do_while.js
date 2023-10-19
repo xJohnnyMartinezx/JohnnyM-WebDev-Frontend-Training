@@ -14,7 +14,7 @@
     // This is how you get a random number between 50 and 100
     let allCones = Math.floor(Math.random() * 50) + 50;
     // This expression will generate a random number between 1 and 5
-    console.log(allCones);
+    console.log(`Cones to sell: ${allCones}`);
 
 
     do {
@@ -23,7 +23,8 @@
             if (amntOfConesPurchased > allCones) {
                 console.log(`Sorry, I only have ${allCones} left, so I can't sell you ${amntOfConesPurchased} cones.`)
             } else {
-                allCones -= amntOfConesPurchased;
+                // allCones -= amntOfConesPurchased;
+                allCones = allCones - amntOfConesPurchased;
                 console.log(`cones left: ${allCones}`);
             }
     } while (allCones > 0);

@@ -37,6 +37,16 @@
 
 
 
+    // // let result = '';
+    // let i = 0;
+    //
+    // do {
+    //     // i = i + 1;
+    //     // result = result + i;
+    //     console.log(i);
+    //     i+=5; // THIS CALCULATION IS HAPPENING, BUT WILL NOT SEE IT IN THE CONSOLE, UNTIL THE NEXT ITERATION.
+    //           // BECAUSE ON THE SECOND ITERATION i IS NOW EQUAL TO 5;
+    // } while (i < 0);
 
 
 

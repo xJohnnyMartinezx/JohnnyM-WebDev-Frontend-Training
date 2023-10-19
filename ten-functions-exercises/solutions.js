@@ -114,6 +114,9 @@ function not(input) {
 
 // 4)
 function addOne(input) {
+    // SIMPLIFIED VERSION
+    // return ++input;
+
     let num = parseInt(input);
     if (input === Infinity) {
         return Infinity;
